@@ -1,0 +1,47 @@
+{
+  "name": "mmconsensus",
+  "version": "0.1.0",
+  "description": "MM-CONSENSUS-0.1 — deterministic HEURISTIC tally and Jaccard aggregator over posted opinions. Not live LLM or model API calls. Author Aziel Eliab. Forks always allowed.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Aziel Eliab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzielEliab/mmconsensus.git"
+  },
+  "homepage": "https://github.com/AzielEliab/mmconsensus",
+  "bugs": {
+    "url": "https://github.com/AzielEliab/mmconsensus/issues"
+  },
+  "keywords": [
+    "mmconsensus",
+    "consensus",
+    "jaccard",
+    "heuristic",
+    "decisiongate"
+  ],
+  "bin": {
+    "mmconsensus": "./src/cli.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "docs",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SKILL.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/cli.js",
+    "mmconsensus": "node src/cli.js",
+    "pack": "node workers/download-tracker/scripts/pack-archive.mjs"
+  }
+}

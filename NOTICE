@@ -1,0 +1,12 @@
+MMConsensus (MM-CONSENSUS-0.1)
+Copyright 2026 Aziel Eliab
+
+Licensed under the Apache License, Version 2.0.
+Forks are always allowed. No additional permission is required to fork,
+modify, or redistribute this work under that License.
+
+This package is a deterministic HEURISTIC tally and Jaccard aggregator over
+posted opinions. It is not a live LLM or model API client. Live model calls
+are SLOT and are not marked live.
+
+Runtime neighbor: https://github.com/AzielEliab/aziel-runtime
